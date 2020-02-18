@@ -2,30 +2,30 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
+}
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 { 
     background-color: #1abc9c; /* Green */
     color: #ffffff;
-  }
-  .bg-2 { 
+}
+.bg-2 { 
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
-  }
-  .bg-3 { 
+}
+.bg-3 { 
     background-color: #ffffff; /* White */
     color: #555555;
-  }
-  .bg-4 { 
+}
+.bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
-  }
-  .container-fluid {
+}
+.container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-  .navbar {
+}
+.navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
@@ -33,7 +33,56 @@ body {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
+}
+.navbar-nav  li a:hover {
     color: #1abc9c !important;
-  }
+}
+#shaker:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#puls:hover {
+    animation: pulse 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1.1);}
+    25% {transform: scale(1.2);}
+    50% {transform: scale(1);}
+    75% {transform: scale(0.8);}
+    100% {transform: scale(1);}
+}
+
+
+
+#shadow{
+    box-shadow: 0 2px 2px green;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#shadow:hover{
+    box-shadow: 15px 15px 12px green;
+
+}
+
+
